@@ -1,0 +1,16 @@
+title: Python Textual Game
+description: Create a textual game.
+template:
+  repo: python-textual-game-template
+  name: python-textual-game
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
